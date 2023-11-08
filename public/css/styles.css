@@ -1,0 +1,803 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: 'Reboto';
+}
+
+/* ! --------- HOME --------- */
+
+/* --------- HEADER --------- */
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 15px;
+    font-family: 'Roboto';
+    display: block;
+}
+
+.logo {
+    min-width: 50%;
+    padding: 10px;
+}
+
+.bar-superior {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.caja-busqueda {
+    display: flex;
+    padding: 10px;
+}
+
+.barra {
+    min-width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.barra input {
+    font-size: 12px;
+    margin: auto;
+    padding: 7px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.barra button {
+    margin: 0;
+}
+
+.lupa {
+    font-size: 14px;
+    border: solid 1px transparent;
+    background-color: white;
+    color: gray;
+    padding: 5px 0 8px 0;
+    border-radius: 5px;
+    position: relative;
+    right: 20px;
+}
+
+.texto-cuotas {
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+}
+/*--------------------------------------------------*/
+.hamburguer {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 12px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.bar-inferior {
+    font-size: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: none;
+}
+
+.bar-inferior a {
+    font-size: 11px;
+    text-decoration: none;
+    color: #222222;
+    padding: 5px;
+}
+
+/*--------------------------------------------------*/
+
+/* ! --------- MAIN --------- */
+
+main {
+    background-color: #ededed;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+}
+
+p{
+    font-size: 12px;
+}
+
+h4 {
+    font-size: 16px;
+    display: none;
+}
+
+article div {
+    font-size: 18px;
+}
+
+main section article {
+    background-color: white;
+    margin-bottom: 10px;
+    width: 80%;
+    transition: 450ms;
+}
+
+main section article:hover .nombre-producto {
+    display: block;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+img {
+    width: 100%;
+}
+
+.titular-visita{
+    font-size: 24px;
+    padding-left: 10%;
+    color: #666;
+}
+
+.titular-ofertas{
+    font-family: 'Reboto';
+    font-size: 24px;
+    padding-left: 10%;
+    color: #666;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.articulo {
+    border-top: solid 1px #ededed;
+    padding: 0px 0px 0px 10px;
+    position: relative;
+}
+
+.articulo i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    margin: 0;
+    transition: all 650ms;
+}
+
+/*--------------------------------------------------*/
+
+.caja-precio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.descuento {
+    color: #44AF49;
+    font-size: 15px;
+    min-width: 70%;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.precio{
+    font-size: 18px;
+    min-width: 30%;
+    padding-right: 7px;
+}
+
+.nombre-producto {
+    color: gray;
+    font-weight: 500;
+    display: none;
+}
+
+/*------------------  LOGIN  ----------------------------*/
+
+.formulario-login {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.boton-login {
+    width: 90%;
+}
+
+.boton-login button {
+    border: solid 1px #1259C3;
+    border-radius: 5px;
+    background-color: #1259C3;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.boton-login button:hover {
+    background-color: #0022AA;
+}
+
+.usuario-login {
+    width: 90%;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.usuario-login input {
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/*------------------  REGISTRO  ----------------------------*/
+
+.formulario-registro {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usuario-registro label {
+    font-size: 15px;
+}
+
+.usuario-registro {
+    margin: 10px 0px;
+    width: 90%;
+}
+
+.usuario-registro input{
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.h4-registro {
+    display: flex;
+    margin: auto;
+    margin-left: 6%;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.radio-registro {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.radio-registro div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.radio-registro input{
+    margin: 5px;
+}
+
+.radio-registro label {
+    margin: 0 20px;
+    font-size: 14px;
+}
+
+.CategoriasDeInteres {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: flex-start;
+}
+
+.checkboxes {
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+.checkboxes label {
+    font-size: 14px;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.archivo-foto {
+    width: 85%;
+    font-size: 10px;
+}
+
+.contraseña-registro {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.contraseña-registro input {
+    border: solid 1px white;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+    padding: 5px;
+}
+
+.contraseña-registro label {
+    font-size: 15px;
+}
+
+.boton-registro {
+    margin: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-registro button{
+    border: solid 1px #1259C3;
+    background-color: #1259C3;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    width: 40%;
+}
+
+.boton-registro button:hover {
+    background-color: #0022AA;
+}
+
+/*--------------------------------------------------*/
+
+/* ! --------- FOOTER --------- */
+
+footer {
+    font-family: 'Roboto';
+    background-color: white;
+    text-align: center;
+}
+
+footer article {
+    padding: 50px 50px 0 50px;
+}
+
+footer article p {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+footer i:hover {
+    color: #222222;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.Copyright {
+    text-align: left;
+    padding: 20px 0 20px 20px;
+    margin: 0;
+    color: gray;
+}
+
+input:invalid {
+    color: red;
+}
+
+.mensaje-error {
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+input:invalid + .mensaje-error {
+    display: block;
+}
+
+/*--------------------------------------------------*/
+
+/* ! --------- MEDIA QUERIES --------- */
+
+@media (min-width: 490px) {
+    
+    header {
+        padding: 0;
+    }
+    
+    h4 {
+        display: block;
+    }
+    
+    main section article {
+        width: 40%;
+    }
+
+    
+    .hamburguer {
+        display: none;
+    }
+    
+    .bar-superior {
+        flex-direction: row;
+    }
+    
+    .lista-productos {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .titular-visita {
+        padding-left: 7%;
+    }
+    
+    .titular-ofertas {
+        padding-left: 7%;
+    }
+
+    .caja-precio {
+        max-width: 180px;
+    }
+    
+    .texto-cuotas {
+        text-align: center;
+        font-size: 12px;
+        margin: auto;
+        margin-left: 15px; 
+        margin-right: 15px;
+    }
+    
+    .bar-inferior {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 5px;
+    }
+    
+    .izq-navbar {
+        display: inline-flex;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .der-navbar {
+        display: inline-flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    /*------------------  LOGIN  ----------------------------*/
+    
+    .boton-login {
+        width: 85%;
+    }
+    
+    .usuario-login {
+        width: 85%;
+        margin: 5px;
+    }
+    
+    .usuario-login input {
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+    
+    .boton-login button {
+        padding: 7px;
+    }
+     
+    /*-----------------  REGISTRO  -------------------------*/
+
+    .radio-registro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .radio-registro div {
+        margin-bottom: 15px;
+    }
+    
+    .archivo-foto {
+        font-size: 15px;
+        width: 80%;
+    }
+    
+    .h4-registro {
+        margin-left: 8%;
+    }
+    
+    .radio-registro, .CategoriasDeInteres {
+        width: 80%;
+    }
+    
+    .contraseña-registro, .boton-registro, .usuario-registro {
+        width: 85%;
+    }
+}
+
+@media (min-width: 769px) {
+    
+    .caja-busqueda {
+        display: flex;
+        width: 50%;
+    }
+
+    .lupa {
+        right: auto;
+        padding: 1px;
+        border: 1px groove gray;
+        color: black;
+        margin-left: 5px;
+        font-size: 13px;
+    }
+
+    .barra {
+        padding: 1px;
+        margin-left: 20px;
+    }
+
+    .barra input {
+        padding: 2px;
+        border: solid 1px gray;
+        border-radius: 4px;
+    }
+
+    .barra i {
+        padding: 2px;
+        border-radius: 4px;
+        border: solid 1px gray;
+    }
+
+    .lista-productos {
+        max-height: 377px;
+    }
+
+    .texto-cuotas {
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .bar-superior {
+        display: flex;
+        padding: 0 10px;
+    }
+
+    main section article {
+        width: 20%;
+    }
+
+    main section article:hover .articulo i {
+        transform: rotate(-90deg);
+    }    
+
+    footer {
+        display: flex;
+        align-items: baseline;
+        position: absolute;
+        padding-bottom: 60px;
+        margin-top: 80px
+    }
+
+    div .Copyright {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .titular-visita {
+        padding-left: 4%;
+    }
+
+    .titular-ofertas {
+        padding-left: 4%;
+        margin: 70px 0 24px 0;
+    }
+
+    .bar-inferior {
+        padding: 0 20px;
+    }
+
+    .bar-inferior a {
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+
+    .bar-inferior a:hover {
+        text-decoration: underline;
+    }
+
+    /*-----------------  LOGIN  -------------------------*/
+
+    .boton-login {
+        width: 75%;
+    }
+
+    .usuario-login {
+        width: 75%;
+    }
+
+    .usuario-login input {
+        padding: 6px;
+    }
+
+    .boton-login button {
+        padding: 6px;
+    }
+
+    .archivo-foto {
+        font-size: 14px;
+        width: 75%;
+    }
+
+    /*-----------------  REGISTRO  -------------------------*/
+
+    .usuario-registro {
+        width: 80%;
+    }
+
+    .h4-registro {
+        margin-left: 10%;
+    }
+
+    .radio-registro {
+        width: 75%;
+    }
+
+    .CategoriasDeInteres {
+        width: 75%;
+    }
+
+    .contraseña-registro {
+        width: 80%;
+    }
+
+    .boton-registro {
+        width: 80%;
+    }
+    
+    .nombre-producto {
+        transition: 450ms;
+    }
+}
+
+@media (min-width: 1315px) {
+    
+    .caja-precio {
+        max-width: none;
+    }
+
+    .bar-inferior a {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .barra {
+        padding: 5px;
+        margin-left: 50px;
+    }
+
+    .lupa {
+        padding: 5px;
+        font-size: 14px;
+        color: black;
+    }
+
+    .lista-productos {
+        max-height: 448px;
+    }
+
+    .titular-ofertas {
+        margin: 70px 0 24px 0;
+    }
+
+    .boton-login {
+        width: 70%;
+    }
+    
+    footer {
+        margin-top: 5%;
+    }
+
+    /*-----------------  LOGIN  -------------------------*/
+
+    .usuario-login {
+        width: 70%;
+    }
+
+    .archivo-foto {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    /*-----------------  REGISTRO  -------------------------*/
+
+    .usuario-registro {
+        width: 75%;
+    }
+
+    .h4-registro {
+        margin-left: 13%;
+        font-size: 16px;
+    }
+
+    .radio-registro {
+        width: 70%;
+    }
+
+    .CategoriasDeInteres {
+        width: 70%;
+    }
+
+    .contraseña-registro {
+        width: 75%;
+    }
+
+    .boton-registro {
+        width: 75%;
+        margin-bottom: 10px;
+    }
+
+    .usuario-registro label {
+        font-size: 15px;
+    }
+
+    .usuario-registro input {
+        font-size: 14px;
+    }
+
+    .radio-registro label {
+        font-size: 15px;
+    }
+
+    .checkboxes label {
+        font-size: 15px;
+    }
+
+    .contraseña-registro label {
+        font-size: 15px;
+    }
+
+    .contraseña-registro input {
+        font-size: 14px;
+    }
+
+    .boton-registro button {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
