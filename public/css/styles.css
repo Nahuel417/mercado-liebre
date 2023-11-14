@@ -26,7 +26,7 @@ header {
 
 .bar-superior {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -71,10 +71,17 @@ header {
 }
 
 .texto-cuotas {
-    text-align: center;
-    font-size: 12px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
 }
+
+.texto-cuotas h2 {
+    font-size: 12px;
+    margin: 0;
+}
+
 /*--------------------------------------------------*/
 .hamburguer {
     background-color: #1259c3;
@@ -287,6 +294,10 @@ input:invalid + .mensaje-error {
     width: 100%;
 }
 
+.usuario-login input:focus {
+    outline: solid 1px black;
+}
+
 /*------------------  REGISTRO  ----------------------------*/
 
 .formulario-registro {
@@ -312,6 +323,10 @@ input:invalid + .mensaje-error {
     font-size: 13px;
     margin: 10px 0;
     width: 100%;
+}
+
+.usuario-registro input:focus, .contraseña-registro input:focus {
+    outline: solid 1px black;
 }
 
 .h4-registro {
@@ -488,18 +503,21 @@ h5 {
     .texto-cuotas {
         text-align: center;
         font-size: 12px;
-        margin: auto;
-        margin-left: 15px; 
-        margin-right: 15px;
+        /*margin-left: 15px; 
+        margin-right: 15px;*/
     }
     
     .bar-inferior {
         display: flex;
         justify-content: space-between;
         padding: 0;
-        margin: 0 5px;
+        margin: 0 4%;
     }
     
+    .bar-inferior a {
+        padding: 5px 3px;
+    }
+
     .izq-navbar {
         display: inline-flex;
         list-style: none;
@@ -566,6 +584,7 @@ h5 {
     .caja-busqueda {
         display: flex;
         width: 50%;
+        padding: 10px 0;
     }
 
     .lupa {
@@ -598,14 +617,15 @@ h5 {
         max-height: 377px;
     }
 
-    .texto-cuotas {
-        margin: auto;
+    .texto-cuotas h2 {
         font-size: 14px;
     }
 
     .bar-superior {
         display: flex;
-        padding: 0 10px;
+        padding: 0;
+        margin: 0 4%;
+        justify-content: space-between;
     }
 
     main section article {
@@ -639,14 +659,10 @@ h5 {
         margin: 70px 0 24px 0;
     }
 
-    .bar-inferior {
-        padding: 0 20px;
-    }
-
     .bar-inferior a {
         padding: 5px 15px;
         font-size: 13px;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgba(0, 0, 0, 0.6);
         transition: all 200ms;
     }
 
@@ -714,6 +730,18 @@ h5 {
         max-width: none;
     }
 
+    .bar-superior {
+        padding: 0;
+        margin: 0 10%;
+        justify-content: space-between;
+    }
+
+    .bar-inferior {
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 10%;
+    }
+
     .bar-inferior a {
         padding: 5px 15px;
         font-size: 14px;
@@ -721,7 +749,7 @@ h5 {
 
     .barra {
         padding: 5px;
-        margin-left: 50px;
+        margin-right: 0;
     }
 
     .barra input {
