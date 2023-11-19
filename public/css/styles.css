@@ -254,12 +254,18 @@ input:invalid + .mensaje-error {
 
 /*------------------  LOGIN  ----------------------------*/
 
+.main-login {
+    padding: 8%;
+}
+
 .formulario-login {
     font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    padding: 20px 0;
 }
 
 .boton-login {
@@ -274,7 +280,7 @@ input:invalid + .mensaje-error {
     padding: 10px;
     width: 100%;
     font-size: 14px;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .boton-login button:hover {
@@ -285,26 +291,36 @@ input:invalid + .mensaje-error {
     width: 90%;
     padding: 5px 0;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .usuario-login input {
-    border: solid 1px white;
-    padding: 10px;
+    border: solid 1px rgb(168, 168, 168);
     border-radius: 5px;
+    padding: 15px;
+    font-size: 13px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
 .usuario-login input:focus {
-    outline: solid 1px black;
+    outline: solid 0.05rem gray;
 }
 
 /*------------------  REGISTRO  ----------------------------*/
+
+.main-registro {
+    padding: 8%;
+}
 
 .formulario-registro {
     font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    padding: 10px 0;
 }
 
 .usuario-registro label {
@@ -312,21 +328,21 @@ input:invalid + .mensaje-error {
 }
 
 .usuario-registro {
-    margin: 10px 0px;
+    margin: 15px 0px;
     width: 90%;
 }
 
 .usuario-registro input{
-    border: solid 1px white;
+    border: solid 1px rgb(168, 168, 168);
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px;
     font-size: 13px;
     margin: 10px 0;
     width: 100%;
 }
 
 .usuario-registro input:focus, .contraseña-registro input:focus {
-    outline: solid 1px black;
+    outline: solid 0.05rem gray;
 }
 
 .h4-registro {
@@ -389,11 +405,11 @@ input:invalid + .mensaje-error {
 }
 
 .contraseña-registro input {
-    border: solid 1px white;
+    border: solid 1px rgb(168, 168, 168);
     border-radius: 8px;
     font-size: 14px;
     margin: 10px 0 15px 0;
-    padding: 5px;
+    padding: 15px;
 }
 
 .contraseña-registro label {
@@ -404,6 +420,9 @@ input:invalid + .mensaje-error {
     margin: 0;
     width: 90%;
     display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -411,10 +430,12 @@ input:invalid + .mensaje-error {
     border: solid 1px #1259C3;
     background-color: #1259C3;
     color: white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     font-size: 13px;
     width: 40%;
+    margin: 5px 0;
+    width: 90%;
 }
 
 .boton-registro button:hover {
@@ -503,8 +524,6 @@ h5 {
     .texto-cuotas {
         text-align: center;
         font-size: 12px;
-        /*margin-left: 15px; 
-        margin-right: 15px;*/
     }
     
     .bar-inferior {
@@ -542,7 +561,7 @@ h5 {
     }
     
     .usuario-login input {
-        padding: 7px;
+        padding: 15px;
         margin-bottom: 10px;
     }
     
@@ -672,16 +691,30 @@ h5 {
 
     /*-----------------  LOGIN  -------------------------*/
 
+    .main-login {
+        padding: 10px;
+    }
+
+    .formulario-login {
+        box-shadow: none;
+        background-color: #ebebeb;
+    }
+
+    .usuario-login input {
+        border: solid 1px white;
+        padding: 6px;
+    }
+
+    .usuario-login input:focus {
+        outline: solid 0.05rem black;
+    }
+
     .boton-login {
         width: 75%;
     }
 
     .usuario-login {
         width: 75%;
-    }
-
-    .usuario-login input {
-        padding: 6px;
     }
 
     .boton-login button {
@@ -695,8 +728,31 @@ h5 {
 
     /*-----------------  REGISTRO  -------------------------*/
 
+    .main-registro {
+        padding: 10px;
+    }
+
+    .formulario-registro {
+        box-shadow: none;
+        background-color: #ebebeb;
+    }
+
     .usuario-registro {
         width: 80%;
+    }
+
+    .usuario-registro input {
+        border: solid 1px white;
+        padding: 5px;
+    }
+
+    .contraseña-registro input {
+        padding: 6px;
+        border: solid 1px white;
+    }
+
+    .usuario-registro input:focus, .contraseña-registro input:focus {
+        outline: solid 0.05rem black;
     }
 
     .h4-registro {
@@ -717,8 +773,14 @@ h5 {
 
     .boton-registro {
         width: 80%;
+        flex-direction: row;
     }
     
+    .boton-registro button {
+        width: 40%;
+        padding: 6px;
+    }
+
     .nombre-producto {
         transition: 450ms;
     }
